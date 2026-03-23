@@ -26,7 +26,7 @@ seoMeta:
   # ogImage: https://cover.sli.dev
 ---
 
-# Matching Pennies in Mice and Monkeys
+# Studying strategic stochasticity in Mice and Monkeys
 
 Timothy Sit
 
@@ -40,58 +40,177 @@ transition: fade
 layout: default
 ---
 
-# Brief background on matching pennies
+# When you have to be strategically random to survive
 
-<div class="grid grid-cols-2 gap-8 items-center">
+<div class="flex flex-col items-center justify-center text-center gap-0">
 
-  <div>
-    <ul class="space-y-4">
-      <li v-click="1">The game "matching pennies" was first formally introduced in the book <em>Theory of Games and Economic Behaviour</em> (1944) by John von Neumann and Oskar Morgenstern<sup>1</sup>.</li>
-      <li v-click="2">In this game, two players each have two choices (heads or tails), and one player has to match the choice of the other player, whilst the other player has to "unmatch".</li>
-      <li v-click="3">It is one of the simplest game that involves strategy and uncertainty<sup>2</sup>. Widely studied in humans and monkeys, only more recently in rodents.</li>
-    </ul>
+  <!-- Image appears second -->
+  <img 
+    v-click="1"
+    src="/driver-and-humphries-1970.png" 
+    class="w-[35%] object-contain  ml-70"
+  />
+
+  <!-- Quote appears first -->
+  <div v-click="2" class="max-w-3xl text-lg italic leading-relaxed">
+    “Protean behaviour is defined as that behaviour which is sufficiently unsystematic 
+    to prevent a reactor predicting in detail the position or actions of the actor.”
+    <br/>
+    <span class="text-sm not-italic opacity-70">
+      — Humphries & Driver (1970)
+    </span>
   </div>
 
-<div>
-  <img v-if="$clicks === 1" src="/theory-of-games-sothebys-auction.png" class="w-full" />
+
+
+</div>
+
+
+---
+transition: fade
+layout: default
+---
+
+# Multiple species exhibit strategic stochasticity
+
+<div class="grid grid-cols-3 gap-6 w-full items-start">
+
+<!-- Column 1 -->
+<div v-click="1" class="flex flex-col items-center text-center gap-0">
   
-  <img v-else-if="$clicks >= 2" src="/symmetric_matching_pennies.svg" class="w-[70%]" />
-</div>
+  <div class="text-sm font-semibold leading-snug max-w-xs">
+    Fish increase path complexity after being poked
+  </div>
 
-</div>
-
-<div v-click="1" class="absolute bottom-5 left-12 w-3/4">
-  <hr class="border-t-1 border-gray-600 opacity-50 mb-2" />
-  <p class="text-sm opacity-75">
-    <sup>1</sup> Although the term goes back as early as 1904.
-  </p>
-  <div v-click="3">
-   <p class="text-sm opacity-75">
-    <sup>2</sup> There is no pure Nash equilibrium, and the reward-maximising behaviour is either to be random or to predict opponent's future move.
-  </p>
+  <img
+    src="/pacific-blue-eye.jpg"
+    class="h-40 object-contain rounded-lg"
+  />
+  <img
+    src="/blue-eye-fish-entropy.png"
+    class="h-40 object-contain rounded-lg"
+  />
+  <div class="text-xs leading-snug italic max-w-xs">
+    Herbert-Read et al. 2015<br>
+    <span class="not-italic">
+      Escape path complexity and its context dependency in Pacific blue-eyes
+    </span>
   </div>
 </div>
 
+<!-- Column 2 -->
+<div v-click="2" class="flex flex-col items-center text-center gap-0">
+  
+  <div class="text-sm font-semibold leading-snug max-w-xs">
+    Male bird absence duration becomes more unpredictable as their mate approach fertile periods
+  </div>
+
+  <img
+    src="/kittiwake_adult.jpg"
+    class="h-40 object-cover object-top rounded-lg mt--5"
+  />
+  <img
+    src="/richard-wagner-2004.png"
+    class="h-40 object-contain rounded-lg"
+  />
+  <div class="text-xs leading-snug italic max-w-xs">
+    Richard Wagner et al. 2004<br>
+    <span class="not-italic">
+      Is Male Unpredictability a Paternity Assurance Strategy?
+    </span>
+  </div>
+</div>
+
+<!-- Column 3 -->
+<div v-click="3" class="flex flex-col items-center text-center gap-0">
+  
+  <div class="text-sm font-semibold leading-snug max-w-xs">
+    Humans can learn to draw random rectangles based on feedback alone
+  </div>
+
+  <img
+    src="/mondrian.jpg"
+    class="h-40 object-contain rounded-lg"
+  />
+  <img
+    src="/ross-and-neuringer-2001.png"
+    class="h-40 object-contain rounded-lg"
+  />
+  <div class="text-xs leading-snug italic max-w-xs">
+    Ross and Neuringer 2002<br>
+    <span class="not-italic">
+      Reinforcement of variations and repetitions along three independent response dimensions
+    </span>
+  </div>
+</div>
+
+</div>
+
 
 ---
 transition: fade
 layout: default
 ---
 
-# Cross-species comparison of matching pennies task 
+
+# Studying strategic stochasticity using matching pennies
 
 
+<div class="relative w-full">
 
----
-transition: fade
-layout: default
----
+  <img v-click="1" src="/MP_task.png" class="w-full transition-opacity duration-500"
+  :class="$clicks >= 2 ? 'opacity-30' : 'opacity-100'" />
 
+  <div v-click="1" class="absolute bottom-4 left-6 text-sm opacity-70">
+    Project led by Joanna Aloor
+  </div>
 
-# Brief background on the matching pennies project
+  <!-- Monkeys -->
+  <div
+    v-click="2"
+    class="absolute border border-black rounded-sm"
+    style="left: 8%; top: 10%; width: 60%;"
+  >
+    <div class="absolute -top-6 left-0 bg-black/100 text-white text-s px-2 py-0 rounded-sm">
+      Monkeys
+    </div>
+    <img
+      src="/lee-2004-cognitive-brain-research.png"
+      class="w-full object-contain"
+    />
+  </div>
 
+  <!-- Rats -->
+  <div
+    v-click="3"
+    class="absolute border border-black rounded-sm"
+    style="left: 20%; top: 40%; width: 50%;"
+  >
+    <div class="absolute -top-6 left-0 bg-black/100 text-white text-s px-2 py-0 rounded-sm">
+      Rats
+    </div>
+    <img
+      src="/tervo-cell-2014.png"
+      class="w-full object-contain"
+    />
+  </div>
 
-<img src="/MP_task.png" class="opacity-100 w-[100%]"/>
+  <!-- Mice -->
+  <div
+    v-click="4"
+    class="absolute border border-black rounded-sm"
+    style="left: 40%; top: 70%; width: 60%;"
+  >
+    <div class="absolute -top-6 left-0 bg-black/100 text-white text-s px-2 py-0 rounded-sm">
+      Mice
+    </div>
+    <img
+      src="/wang-2022-eNeuro.png"
+      class="w-full object-contain"
+    />
+  </div>
+
+</div>
 
 
 ---
@@ -99,7 +218,7 @@ transition: fade
 layout: default 
 ---
 
-# Mice learn to do the task
+# Mice learn to make more stochastic choices 
 
 
 <div class="ml-20 mt-5">
@@ -142,7 +261,7 @@ class: flex flex-col justify-center
 
 <v-click>
 
-**Past** (last lab meeting)
+**Past** (last lab meeting on October 2025)
 
 </v-click>
 
@@ -179,20 +298,6 @@ class: flex flex-col justify-center
 2. MP + Neuropixels
 
 </v-clicks>
-
-
---- 
-transition: fade 
----
-
-# Paper outline
-
-o
-1. Mouse task and behaviour summary 
-2. GLM-HMM on mice 
-3. Monkey task and model fits 
-4. Comparison between mouse and monkey 
-5. Widefield / movement analysis
 
 
 
@@ -568,7 +673,7 @@ columns: is-6
 }
 </style>
 
-<div v-click="1" class="absolute bottom-5 left-12 w-[45%] text-sm opacity-75">
+<div v-click="4" class="absolute bottom-5 left-12 w-[45%] text-sm opacity-75">
   <hr class="border-t border-gray-600 opacity-0 mb-2" />
   
   > P(WSLS) calculated as $P(X_t = Y_{t-1})$ where <br> $X_t$ and $Y_t$ are the animal’s and opponent’s choices on trial $t$.
@@ -605,6 +710,13 @@ columns: is-6
   />
 </div>
 
+<div v-click="5" class="absolute bottom-5 right-10 w-[45%] text-sm opacity-75">
+  <hr class="border-t border-gray-600 opacity-0 mb-2" />
+  
+  > Entropy measure follows Lee 2004 by calculating animal's choices on trial $t-3$ to $t$ and opponent's choices on trial $t-3$ to $t-1$. Mutual information was calculated between choice sequence of both players on trial $t-4$ to $t-1$ and the animal's choice on trial $t$. 
+</div>
+
+
 
 
 ---
@@ -624,8 +736,8 @@ columns: is-6
 ## Monkey 
 
 <div v-click="2" class="flex gap-4 mt-20">
-  <img src="/monkey_block_entropy_and_p_stochastic_logodds_lme_fit.svg" class="opacity-100 w-[50%]"/> 
-  <img src="/monkey_mutual_info_and_p_stochastic_logodds_lme_fit.svg" class="opacity-100 w-[50%]"/>
+  <img src="/monkey_block_entropy_vs_p_stochastic_per_session.svg" class="opacity-100 w-[50%]"/> 
+  <img src="/monkey_mutual_info_vs_p_stochastic_per_session.svg" class="opacity-100 w-[50%]"/>
 </div>
 
 
@@ -633,16 +745,11 @@ columns: is-6
 ## Mouse 
 
 <div v-click="1" class="flex gap-4 mt-20">
-  <img src="/entropy_and_log_p_stochastic_lme_fit.png" class="opacity-100 w-[47%]"/> 
-  <img src="/mutual_info_and_logodds_p_stochastic_lme_fit.png" class="opacity-100 w-[47%]"/>
+  <img src="/mouse_block_entropy_vs_p_stochastic_per_session.svg" class="opacity-100 w-[47%]"/> 
+  <img src="/mouse_mutual_info_vs_p_stochastic_per_session.svg" class="opacity-100 w-[47%]"/>
 </div>
 
 
-<div v-click="1" class="absolute bottom-20 left-60 w-[45%] text-sm opacity-75">
-  <hr class="border-t border-gray-600 opacity-0 mb-2" />
-  
-  > $P(S)$ is the probabilty of being in the stocahstic state. The log-odds $\log \left( \frac{P(S)}{1 - P(S)} \right)$ is taken here to linearize it.
-</div>
 
 
 <div v-click="3"
@@ -673,13 +780,13 @@ columns: is-6
     <div class="grid grid-cols-2 gap-4" v-click-hide="5">
       <img v-click="1" src="/monkey_p_stochastic_heatmap.svg" class="w-full" />
       <img v-click="2" src="/mouse_p_stochastic_heatmap.svg" class="w-full" />
-      <img v-click="3" src="/mean_p_stochastic_per_trial_and_session_interpolated_monkey.svg" class="w-full" />
-      <img v-click="4" src="/mean_p_stochastic_per_trial_and_session_interpolated_mice.svg" class="w-full" />
+      <img v-click="3" src="/mean_p_stochastic_per_trial_and_session_interpolated_monkey_v2.svg" class="w-full" />
+      <img v-click="4" src="/mean_p_stochastic_per_trial_and_session_interpolated_mice_v2.svg" class="w-full" />
     </div>
 
   <!-- Replacement image, same position, appears on click 5 -->
   <div v-click="5" class="absolute inset-0 flex items-center justify-center">
-    <img src="/mouse_monkey_inverted_U_shape_p_stochastic.svg"
+    <img src="/mouse_monkey_inverted_U_shape_p_stochastic_v2.svg"
           class="w-full h-full object-contain" />
   </div>
 </div>
@@ -773,7 +880,7 @@ transition: fade
 <p class="text-base text-gray-700 mb-4 ml-4">Stochastic states correspond to periods of higher entropy; bias states correspond to periods with more extreme P(right) values.</p>
 
 <p class="text-lg font-semibold italic text-teal-600">Are there differences in how well mice and monkeys were doing the task?</p>
-<p class="text-base text-gray-700 ml-4">Monkeys show more sustained high-entropy periods and overall higher entropy, but reward rates in mice and monkeys are similar.</p>
+<p class="text-base text-gray-700 ml-4">Monkeys show more sustained high-entropy periods and overall higher entropy, but reward rates during those periods in mice and monkeys are similar.</p>
 
 </v-clicks>
 
@@ -788,33 +895,6 @@ transition: fade
 
 # Part II: Widefield and movement analysis
 
-
---- 
-layout: side-title
-color: coral 
-transition: fade 
----
-
-:: title :: 
-
-# Scientific questions
-
-:: content :: 
-
-
-<div style="transform: translateY(12vh)">
-
-<v-clicks>
-
-
-1. What are the decodable signals from widefield data and how do they vary across states?
-2. Are there differences in uninstructed movement across states? 
-3. What signals are encoded in widefield activity (beyond movement)?
-
-
-</v-clicks>
-
-</div>
 
 
 
@@ -881,6 +961,34 @@ Ways to process widefield data
 </div>
 
 </div>
+
+--- 
+layout: side-title
+color: coral 
+transition: fade 
+---
+
+:: title :: 
+
+# Scientific questions
+
+:: content :: 
+
+
+<div style="transform: translateY(12vh)">
+
+<v-clicks>
+
+
+1. What are the decodable signals from widefield data and how do they vary across states?
+2. Are there differences in uninstructed movement across states? 
+3. What signals are encoded in widefield activity (beyond movement)?
+
+
+</v-clicks>
+
+</div>
+
 
 
 
