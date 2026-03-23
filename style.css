@@ -1,0 +1,31 @@
+/* Custom coral color scheme for Neversink */
+/* Drop this file in the same directory as your slides.md */
+/* Then use color: coral in your slide frontmatter */
+
+.neversink-coral-scheme {
+  --neversink-bg-color: #E8694A;
+  --neversink-bg-code-color: #c8502f;
+  --neversink-fg-code-color: #fff8f6;
+  --neversink-fg-color: #c8502f;
+  --neversink-text-color: #ffffff;
+  --neversink-border-color: #c8502f;
+  --neversink-highlight-color: #f0a58a;
+}
+
+.neversink-coral-light-scheme {
+  --neversink-bg-color: #fde8e2;
+  --neversink-bg-code-color: #fbd0c5;
+  --neversink-fg-code-color: #7a2a15;
+  --neversink-fg-color: #E8694A;
+  --neversink-text-color: #7a2a15;
+  --neversink-border-color: #E8694A;
+  --neversink-highlight-color: #E8694A;
+}
+
+.text-coral {
+  color: #E8694A;
+}
+
+.bg-coral-pop {
+  background-color: rgba(232, 105, 74, 0.9);
+}
