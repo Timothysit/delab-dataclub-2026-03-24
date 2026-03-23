@@ -12,6 +12,7 @@ info: |
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
+colorSchema: light
 drawings:
   persist: false
 # slide transition: https://sli.dev/guide/animations.html#slide-transitions
@@ -26,9 +27,13 @@ seoMeta:
   # ogImage: https://cover.sli.dev
 ---
 
+
+
 # Studying strategic stochasticity in Mice and Monkeys
 
-Timothy Sit
+Tim Sit | 2026-03-24
+
+<img src="/im_so_random.png" class="mt-10 mx-auto w-[60%]" />
 
 
 <!--
