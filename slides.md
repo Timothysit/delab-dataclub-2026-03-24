@@ -62,7 +62,7 @@ layout: default
     to prevent a reactor predicting in detail the position or actions of the actor.”
     <br/>
     <span class="text-sm not-italic opacity-70">
-      — Humphries & Driver (1970)
+      Michael Chance(1959), Humphries & Driver (1970)
     </span>
   </div>
 
@@ -620,7 +620,7 @@ columns: is-6
 ## Monkey 
 
 <div v-click="1">
-  <img src="/monkey_three_states_weight.png" class="opacity-100 w-[100%]"/>
+  <img src="/monkey_three_states_weight_v2.svg" class="opacity-100 w-[100%]"/>
 </div>
 
 <div class="relative w-full h-[150px] kde-reveal">
@@ -718,9 +718,8 @@ columns: is-6
 <div v-click="5" class="absolute bottom-5 right-10 w-[45%] text-sm opacity-75">
   <hr class="border-t border-gray-600 opacity-0 mb-2" />
   
-  > Entropy measure follows Lee 2004 by calculating animal's choices on trial $t-3$ to $t$ and opponent's choices on trial $t-3$ to $t-1$. Mutual information was calculated between choice sequence of both players on trial $t-4$ to $t-1$ and the animal's choice on trial $t$. 
+  > Entropy measure follows Lee 2004 by calculating animal's choices on trial $t-3$ to $t$ and opponent's choices on trial $t-3$ to $t-1$. 
 </div>
-
 
 
 
@@ -754,6 +753,11 @@ columns: is-6
   <img src="/mouse_mutual_info_vs_p_stochastic_per_session.svg" class="opacity-100 w-[47%]"/>
 </div>
 
+<div v-click="1" class="absolute bottom-5 left-10 w-[45%] text-sm opacity-75">
+  <hr class="border-t border-gray-600 opacity-0 mb-2" />
+  
+  > Mutual information was calculated between choice sequence of both players on trial $t-4$ to $t-1$ and the animal's choice on trial $t$. 
+</div>
 
 
 
