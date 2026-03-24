@@ -1388,16 +1388,16 @@ loop: true
   <strong>Cast</strong><br> 
   <span class="font-size-3 mt-0">(In order of appearance)</span>
 </div>
-<div class="grid-item text-right mr-4 col-span-1"><strong>Widefield</strong></div>
-<div class="grid-item col-span-2">Joanna did all the recordings&nbsp;&nbsp;</div>
-<div class="grid-item text-right mr-4 col-span-1"><strong>Monkey MP</strong></div>
-<div class="grid-item col-span-2">Dae-yeol Lee <br/> Monkeys C, E, F&nbsp;</div>
 <div class="grid-item text-right mr-4 col-span-1"><strong>Mouse MP</strong></div>
 <div class="grid-item col-span-2">Joanna&nbsp;</div>
+<div class="grid-item text-right mr-4 col-span-1"><strong>Monkey MP</strong></div>
+<div class="grid-item col-span-2">Dae-yeol Lee <br/> Monkeys C, E, F&nbsp;</div>
 <div class="grid-item text-right mr-4 col-span-1"><strong>Human MP</strong></div>
 <div class="grid-item col-span-2">Julia Nicklaus&nbsp;</div>
+<div class="grid-item text-right mr-4 col-span-1"><strong>Widefield</strong></div>
+<div class="grid-item col-span-2">Joanna&nbsp;&nbsp;</div>
 <div class="grid-item text-right mr-4 col-span-1"><strong>Mice</strong></div>
-<div class="grid-item col-span-2">JOA-M-0020<br/>JOA-M-0022<br/>JOA-M-0023<br/>JOA-M-0024<br/>JOA-M-0025<br/>JOA-M-0026<br/>JOA-M-0027<br/>JOA-M-0028<br/>JOA-M-0029<br/>JOA-M-0030<br/>JOA-M-0031<br/>JOA-M-0033<br/>JOA-M-0036</div>
+<div class="grid-item col-span-2">JOA-M-0008<br/>JOA-M-0009<br/>JOA-M-0010<br/>JOA-M-0013<br/>JOA-M-0014<br/>JOA-M-0015<br/>JOA-M-0016<br/>...<br/></div>
 
 
 <div class="grid-item text-right mr-4 col-span-1"><strong>Humans</strong></div>
